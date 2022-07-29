@@ -1,0 +1,92 @@
+
+^
+@
+
+patient_idThe ID of the patient"
+patient_idJbreast_cancer
+‚œ—€ÅB‚œ—€ÅB
+B
+$
+__dummy"
+__dummy_idJbreast_cancer
+‚œ—€ÅB‚œ—€ÅB"$102bc3d7-13b3-4a5c-af83-a971e02697a4*‚œ—€Î—C2ê
+Ë
+df3_feature_viewbreast_cancer
+patient_id"
+radius error"
+texture error"
+perimeter error"
+
+area error"
+smoothness error"
+compactness error"
+concavity error2€é:xevent_timestampZdata\data_df3.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df3.parquet@b
+
+patient_id
+‚œ—€ÅB‚œ—€ÅB2€
+á
+df4_feature_viewbreast_cancer
+patient_id"
+concave points error"
+symmetry error"
+fractal dimension error"
+worst radius"
+worst texture"
+worst perimeter"
+
+worst area"
+worst smoothness"
+worst compactness"
+worst concavity"
+worst concave points"
+worst symmetry"
+worst fractal dimension2€é:xevent_timestampZdata\data_df4.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df4.parquet@b
+
+patient_id
+‚œ—€ÅB‚œ—€ÅB2¹
+š
+df1_feature_viewbreast_cancer
+patient_id"
+mean radius"
+mean texture"
+mean perimeter"
+	mean area"
+mean smoothness2€é:xevent_timestampZdata\data_df1.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df1.parquet@b
+
+patient_id
+‚œ—ÀÉÚB‚œ—ÀÉÚB2Ğ
+±
+df2_feature_viewbreast_cancer
+patient_id"
+mean compactness"
+mean concavity"
+mean concave points"
+mean symmetry"
+mean fractal dimension2€é:xevent_timestampZdata\data_df2.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df2.parquet@b
+
+patient_id
+‚œ—€Î—C‚œ—€Î—C2
+â
+target_feature_viewbreast_cancer
+patient_id"
+
+target2€é:‹event_timestamp*event_timestampZdata\target_df.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\target_df.parquet@b
+
+patient_id
+‚œ—€Î—C‚œ—€Î—CR¼
+¢
+,feast.infra.online_stores.sqlite.SqliteTable"r
+PC:\Users\lionh\OneDrive\Desktop\Feast-Testing\breast_cancer\data\online_store.dbbreast_cancer_df1_feature_view
+¢
+,feast.infra.online_stores.sqlite.SqliteTable"r
+PC:\Users\lionh\OneDrive\Desktop\Feast-Testing\breast_cancer\data\online_store.dbbreast_cancer_df2_feature_view
+¢
+,feast.infra.online_stores.sqlite.SqliteTable"r
+PC:\Users\lionh\OneDrive\Desktop\Feast-Testing\breast_cancer\data\online_store.dbbreast_cancer_df3_feature_view
+¢
+,feast.infra.online_stores.sqlite.SqliteTable"r
+PC:\Users\lionh\OneDrive\Desktop\Feast-Testing\breast_cancer\data\online_store.dbbreast_cancer_df4_feature_view
+¥
+,feast.infra.online_stores.sqlite.SqliteTable"u
+PC:\Users\lionh\OneDrive\Desktop\Feast-Testing\breast_cancer\data\online_store.db!breast_cancer_target_feature_viewbˆevent_timestampZdata\data_df1.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df1.parquetªbreast_cancerbˆevent_timestampZdata\data_df2.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df2.parquetªbreast_cancerbˆevent_timestampZdata\data_df3.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df3.parquetªbreast_cancerbˆevent_timestampZdata\data_df4.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\data_df4.parquetªbreast_cancerb›event_timestamp*event_timestampZdata\target_df.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢data\target_df.parquetªbreast_cancerz5
+breast_cancer$b7b64940-978f-42e7-812a-5d42486222be
