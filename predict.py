@@ -1,19 +1,13 @@
 # Importing dependencies
-import pandas as pd
 from feast import FeatureStore
-from feast.infra.offline_stores.file_source import SavedDatasetFileStorage
+import pandas as pd
+from joblib import load
 
 # Getting our FeatureStore
 store = FeatureStore(repo_path="C:/Users/lionh/OneDrive/Desktop/Feast-Testing/breast_cancer")
 
-# Reading our targets as an entity DataFrame
-entity_df = pd.read_parquet(path="data/target_df.parquet")    
-
-# Getting the indicated historical features
-# and joining them with our entity DataFrame
-training_data = store.get_historical_features(
-    entity_df=entity_df,
-    features=[
+# Defining our features names
+feast_features = [
         "df1_feature_view:mean radius",
         "df1_feature_view:mean texture",
         "df1_feature_view:mean perimeter",
@@ -45,11 +39,18 @@ training_data = store.get_historical_features(
         "df4_feature_view:worst symmetry",
         "df4_feature_view:worst fractal dimension"
     ]
-)
 
-# Storing the dataset as a local file
-dataset = store.create_saved_dataset(
-    from_=training_data,
-    name="breast_cancer_dataset",
-    storage=SavedDatasetFileStorage("data/breast_cancer_dataset.parquet")
-)
+# Getting the latest features
+features = store.get_online_features(
+    features=feast_features,    
+    entity_rows=[{"patient_id": 568}, {"patient_id": 567}]
+).to_dict()
+
+# Converting the features to a DataFrame
+features_df = pd.DataFrame.from_dict(data=features)
+
+# Loading our model and doing inference
+reg = load("model.joblib")
+predictions = reg.predict(features_df[sorted(features_df.drop("patient_id", axis=1))])
+predictions_df = pd.DataFrame(predictions, columns=["prediction"])
+predictions_df.to_csv("predictions.csv", index=False)
