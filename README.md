@@ -6,7 +6,7 @@ Feature Store is pretty much used in every large scale ml project and many big f
 
 ### Architecture of Feature Store:
 
-![](https://raw.githubusercontent.com/DARK-art108/Feast-Feature-Store/main/utils/feast.png)
+![](https://github.com/DARK-art108/Feast-Feature-Store/blob/main/utils/feast.png)
 
 To make this project work, we need to use the following steps:
 
