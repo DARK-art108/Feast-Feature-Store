@@ -13,8 +13,8 @@ To make this project work, we need to use the following steps:
 1. Install Feast: `pip install feast`
 2. Run: `feast init -n breast_cancer`
 3. Run: `data_generation.ipynb` notebook to generate data
-4. Make Changes in feature_store.py to change the path of the data and the name of the feature store
-5. Run: `definitions.py` to generate schema
+4. Make Changes in `feature_store.yaml` to change the path of the data and the name of the feature store
+5. Run: `definitions.py` to generate schema and Run: `feast apply` to apply the schema to the data
 6. Run: `create_dataset.py` to create dataset
 7. Run: `train.py` to train the model and save the model
 8. Run: `materialize.py` to materialize to update the feature store with recent features.
