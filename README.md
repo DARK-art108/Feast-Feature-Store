@@ -20,13 +20,15 @@ To make this project work, we need to use the following steps:
 8. Run: `materialize.py` to materialize to update the feature store with recent features.
 9. Run: `predict.py` to predict the data and save the predictions to prediction.csv.
 
-Some things to note:
+## Some things to note:
 
-### Online vs Offline Feature Store:
+**Online vs Offline Feature Store:**
 
 **Online** – In online mode, features are read with low latency (milliseconds) reads and used for high throughput predictions. This mode requires a feature group to be stored in an online store. 
 
 **Offline** – In offline mode, large streams of data are fed to an offline store, which can be used for training and batch inference. This mode requires a feature group to be stored in an offline store.
+
+***We have used an online store in this project, to get low latency reads and high throughput predictions.***
 
 **Error you will face while using this project:**
 
